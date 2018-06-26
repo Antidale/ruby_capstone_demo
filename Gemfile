@@ -5,7 +5,10 @@ gem 'rails', '4.2.8'
 
 gem 'rails-api'
 
-gem 'spring', :group => :development
+group :development do
+  gem 'spring'
+  gem 'rspec-rails', '~> 3.5'
+end
 
 
 gem 'pg', '~> 0.15'
