@@ -3,6 +3,7 @@ source 'https://rubygems.org'
 gem 'rails', '4.2.8'
 gem 'rails-api', '~>0.4', '>= 0.4.0'
 gem 'rack-cors', '~>0.4', '>= 0.4.0', :require => 'rack/cors'
+gem 'pry-rails', '~>0.3', '>= 0.3.4'
 
 group :development do
   gem 'spring'
