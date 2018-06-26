@@ -21,10 +21,11 @@ module RubyCapstoneDemo
     # set up CORS, replace 'siteB.com' with your actual allowed site
     config.middleware.insert_before 0, "Rack::Cors" do
       allow do
-        origins: 'siteB.com'
-        resource: '/api/*',
+        origins 'siteB.com'
+        resource '/api/*',
           :headers => :any,
           :methods => [:get, :post, :put, :delete, :options]
+      end
     end
 
     # Bootstrap mongoid config
