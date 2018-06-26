@@ -6,6 +6,7 @@ gem 'rails-api'
 group :development do
   gem 'spring'
   gem 'rspec-rails', '~> 3.5'
+  gem 'httparty', '~> 0.14', '>=0.14.0'
 end
 
 gem 'mongoid', '~> 5.1', '>= 5.1.5'
