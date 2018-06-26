@@ -1,11 +1,13 @@
 source 'https://rubygems.org'
 
 gem 'rails', '4.2.8'
-gem 'rails-api'
+gem 'rails-api', '~>0.4', '>= 0.4.0'
+gem 'rack-cors', '~>0.4', '>= 0.4.0', :require => 'rack/cors'
 
 group :development do
   gem 'spring'
   gem 'rspec-rails', '~> 3.5'
+  gem 'byebug', '~> 9.0', '>=9.0.6'
   gem 'httparty', '~> 0.14', '>=0.14.0'
 end
 
