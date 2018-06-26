@@ -47,6 +47,4 @@ RSpec.describe "ApiDevelopments", type: :request do
       expect(parsed_body).to include("id"=>bar.id.to_s)
     end
   end
-
-
 end
