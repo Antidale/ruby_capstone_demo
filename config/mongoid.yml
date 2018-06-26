@@ -3,7 +3,7 @@ development:
     default:
       database: ruby_capstone_demo_development
       hosts:
-        - <=% ENV['MONGO_HOST'] ||= localhost:27017 %>
+        - <%= ENV['MONGO_HOST'] ||= "127.0.0.1:27017" %>
       options:
 
   options:
@@ -12,7 +12,7 @@ test:
     default:
       database: ruby_capstone_demo_test
       hosts:
-        - <=% ENV['MONGO_HOST'] ||= localhost:27017 %>
+        - <%= ENV['MONGO_HOST'] ||= "127.0.0.1:27017" %>
       options:
         read:
           mode: :primary

@@ -31,7 +31,7 @@ RSpec.describe "ApiDevelopments", type: :request do
     after(:each) { Bar.delete_all}
     it "create Mongo-backed model" do
       bar = Bar.create(:name => "test")
-      expect(bar.find(bar.id).name).to eq("test")
+      expect(Bar.find(bar.id).name).to eq("test")
     end
 
     it "expose API resourses under '/api'" do
