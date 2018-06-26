@@ -20,7 +20,7 @@ RSpec.describe "ApiDevelopments", type: :request do
 
     it "create RDBMS-backed API" do
       foo = Foo.create(:name => "test")
-      get foo_path(object.id)
+      get foo_path(foo.id)
       expect(response).to have_http_status(:ok)
       expect(parsed_body["name"]).to eq("test")
     end
@@ -40,7 +40,7 @@ RSpec.describe "ApiDevelopments", type: :request do
 
     it "create Mongo-backed API" do
       bar = Bar.create(:name => "test")
-      get bar_path(object.id)
+      get bar_path(bar.id)
       expect(response).to have_http_status(:ok)
       expect(parsed_body["name"]).to eq("test")
     end
