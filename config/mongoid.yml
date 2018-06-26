@@ -21,6 +21,5 @@ production:
   clients:
     default:
       uri: <%= ENV['MLAB_URI'] %>
-      hosts:
       options:
         connect_timeout: 15
