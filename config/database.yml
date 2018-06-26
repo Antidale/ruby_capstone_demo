@@ -13,7 +13,3 @@ test:
   database: ruby_capstone_demo_test
 
 production:
-  <<: *default
-  database: ruby_capstone_demo_production
-  username: ruby_capstone_demo
-  password: <%= ENV['RUBY_CAPSTONE_DEMO_DATABASE_PASSWORD'] %>
