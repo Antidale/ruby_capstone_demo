@@ -8,7 +8,7 @@ group :development do
   gem 'rspec-rails', '~> 3.5'
 end
 
-gem 'mongoid', '~> 5.0.0'
+gem 'mongoid', '~> 5.1', '>= 5.1.5'
 gem 'pg', '~> 0.15'
 
 
