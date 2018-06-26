@@ -1,8 +1,6 @@
 source 'https://rubygems.org'
 
-
 gem 'rails', '4.2.8'
-
 gem 'rails-api'
 
 group :development do
@@ -10,7 +8,7 @@ group :development do
   gem 'rspec-rails', '~> 3.5'
 end
 
-
+gem 'mongoid', '~> 5.1', '>= 5.1.5'
 gem 'pg', '~> 0.15'
 
 
