@@ -16,6 +16,7 @@ end
 
 group :production do
   gem 'rails_12factor', '~>0.0', '>=0.0.3'
+  gem 'puma'
 end
 
 gem 'mongoid', '~> 5.1', '>= 5.1.5'
