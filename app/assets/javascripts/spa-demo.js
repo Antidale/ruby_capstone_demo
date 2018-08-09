@@ -7,3 +7,4 @@
 //= require spa-demo/app.module
 //= require spa-demo/app.router
 //= require spa-demo/app.constants
+//= require spa-demo/foos/foos.module
