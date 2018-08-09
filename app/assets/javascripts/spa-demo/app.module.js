@@ -1,5 +1,5 @@
 (() => {
   'use strict';
 
-  angular.module("spa-demo", ["ui-routers"]);
+  angular.module("spa-demo", ["ui.router"]);
 })();
